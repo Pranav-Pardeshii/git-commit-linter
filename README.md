@@ -65,8 +65,3 @@ eg. 'feat: implement commit message validator using regex'
 $ git commit -m "feat: add commit message validation hook"
 [main 3f2a1b9] feat: add commit message validation hook
 ```
-
-## Notes
-
-- The hook only checks the first line of your commit message (the summary), which is standard practice — put extra detail in the commit body if needed.
-- Git hooks aren't version-controlled or auto-synced. If you update `linter.py`, you need to manually re-copy it into `.git/hooks/commit-msg` for the change to take effect.
